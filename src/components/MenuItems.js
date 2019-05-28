@@ -17,7 +17,7 @@ class MenuItems extends Component {
                                 <label>{ item.fooditem }</label>
                             </div>
                             <div className="col-md-3 col-lg-3 col-sm-3 col-xs-3 col-md-offset-1 col-xs-offset-1 col-lg-offset-1">
-                                <label>Price: ${ item.price }</label>
+                                <label>Price: <span>&#8377;</span>{ item.price }</label>
                             </div>
                             <div className="col-md-2 col-lg-2 col-sm-2 col-xs-2 col-md-offset-1 col-xs-offset-1 col-lg-offset-1">
                                 <input type="button" value="Add" className="btn-group-lg btn-group-sm btn-group-xs btn-primary" id="btnAdd"

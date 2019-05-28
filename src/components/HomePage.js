@@ -51,41 +51,7 @@ class HomePage extends Component {
                                                         </div>
                                                         <div className="row justify-content-md-center">
                                                             <div className="card-body">
-
-                                                                {/*This way we can transfer the initialstate to the CartItems
-                                                                and we can map state to props there. It works perfectly*/}
-
                                                                 <CartItems />
-
-                                                                {/*Quantity change does not appear on UI
-                                                                in the following way
-
-                                                                {console.log(this.props.stateArray.cart)}
-                                                                {
-                                                                    this.props.stateArray.cart.map((item,index) => {
-                                                                        return(
-                                                                            <CartItems
-                                                                                key={index}
-                                                                                item={item}
-                                                                            />
-                                                                        );
-                                                                    })
-                                                                }*/}
-
-                                                                {/*In order to show quantity update on UI, we can pass
-                                                                qty of item separately*/}
-                                                                {/*{
-                                                                    this.props.stateArray.cart.map((item,index) => {
-                                                                        return(
-                                                                            <CartItems
-                                                                                key={index}
-                                                                                item={item}
-                                                                                qty={item.qty}
-                                                                            />
-                                                                        );
-                                                                    })
-                                                                }*/}
-
                                                             </div>
                                                         </div>
                                                     </div>
@@ -95,7 +61,7 @@ class HomePage extends Component {
                                     </div>
                                 </div>
                                 <div className="text-center">
-                                    <label className="h1 control-label">Total: {this.props.stateArray.total.totalvalue}</label>
+                                    <label className="h1 control-label">Total: {this.props.stateArray.total.totalvalue} <span>&#8377;</span></label>
                                 </div>
                             </div>
                         </div>
@@ -108,12 +74,6 @@ class HomePage extends Component {
 
 function mapStateToProps(stateArray) {
     console.log(stateArray);
-    // const inventoryArr = Object.keys(state.inventory).map((item) => (
-    //     {
-    //         'item' : item,
-    //     }
-    // ));
-    // return {inventoryArray};
     return {stateArray};
 }
 
