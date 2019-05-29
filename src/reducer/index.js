@@ -3,12 +3,12 @@ import {ADD, REMOVE} from "../action/index";
 // https://github.com/reactjs/react-redux/blob/d5bf492ee35ad1be8ffd5fa6be689cd74df3b41e/src/components/createConnect.js#L91
 let initialState = {
     inventory: [
-        {fooditem: "Pasta Carbonara", price: 12.00},
-        {fooditem: "Margherita Pizza", price: 27.00},
-        {fooditem: "Mushroom Risotto", price: 16.00},
-        {fooditem: "Panzenella", price: 10.00},
-        {fooditem: "Bruschetta", price: 10.00},
-        {fooditem: "Tiramisu", price: 6.00}
+        {fooditem: "Pasta", price: 120.00},
+        {fooditem: "Margherita Pizza", price: 270.00},
+        {fooditem: "Mushroom Risotto", price: 160.00},
+        {fooditem: "Sandwich", price: 100.00},
+        {fooditem: "Egg Roll", price: 100.00},
+        {fooditem: "Chicken Burger", price: 60.00}
     ],
     cart: [],
     total: [{totalvalue:0}]
